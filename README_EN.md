@@ -35,7 +35,7 @@ English | [简体中文](./README.md)
 - 4.55 cm × 3.60 cm
 - JLC 2-layer board, ENIG finish, lead-free SMT
 
-## 1. Board-Level Pin Map (PinMap.md)
+## 1. Board-Level Pin Map (HDK/G4R_NANO-PinMap.md)
 
 | Function | Pin | Notes |
 |------|------|------|
@@ -54,20 +54,28 @@ English | [简体中文](./README.md)
 
 | Path | Description |
 |------|------|
-| `Examples/` | Official example library (adapted to G4R_NANO, 94 projects) |
-| `FreeRTOS/` | Standalone projects: FreeRTOS applications (9, ported from STM32G474E-EVAL) |
-| `USB_Device/` | Standalone projects: USB Device applications (CDC/HID/DFU/MSC, 4 in total, ported from STM32G474E-EVAL) |
-| `GPIO_EXTI/` | Standalone project: external interrupt example |
-| `RGB/` | Standalone project: RGB LED control |
-| `RST_KEY/` | Standalone project: reset key test |
-| `SPI_LCD_1.47inch/` | Standalone project: 1.47" LCD |
-| `SPI_LCD_2.0inch/` | Standalone project: 2.0" LCD |
-| `SPI_LCD_2.4inch/` | Standalone project: 2.4" LCD |
-| `SPI_FLASH/` | Standalone project: SPI Flash (W25Q) |
-| `PinMap.md` | Board-level pin definitions |
-| `keilclean.bat` | Keil cleanup script |
+| `HDK/` | Hardware Development Kit |
+| `HDK/G4R_NANO-Schematic.pdf` | Board schematic |
+| `HDK/G4R_NANO-PinMap.md` | Board-level pin map |
+| `HDK/Altium-Designer-Libraries/G4R_NANO.PcbLib` | Altium Designer PCB footprint library |
+| `HDK/Altium-Designer-Libraries/G4R_NANO.SchLib` | Altium Designer schematic symbol library |
+| `HDK/Mechanical/` | Mechanical dimension drawings |
+| `SDK/Examples/` | Official example library (adapted to G4R_NANO, 94 projects) |
+| `SDK/FreeRTOS/` | Standalone projects: FreeRTOS applications (9, ported from STM32G474E-EVAL) |
+| `SDK/USB_Device/` | Standalone projects: USB Device applications (CDC/HID/DFU/MSC, 4 in total, ported from STM32G474E-EVAL) |
+| `SDK/GPIO_EXTI/` | Standalone project: external interrupt example |
+| `SDK/RGB/` | Standalone project: RGB LED control |
+| `SDK/RST_KEY/` | Standalone project: reset key test |
+| `SDK/SPI_LCD_1.47inch/` | Standalone project: 1.47" LCD |
+| `SDK/SPI_LCD_2.0inch/` | Standalone project: 2.0" LCD |
+| `SDK/SPI_LCD_2.4inch/` | Standalone project: 2.4" LCD |
+| `SDK/SPI_FLASH/` | Standalone project: SPI Flash (W25Q) |
+| `SDK/keilclean.bat` | Keil cleanup script |
 | `STM32G474RET6.ioc` | CubeMX project (root configuration) |
-| `README.md` | This document |
+| `STM32_CubeMX_Keil_快速上手.md` | CubeMX/Keil quick-start guide (Chinese) |
+| `SDK.7z` | SDK archive |
+| `README.md` | This document (Simplified Chinese) |
+| `README_EN.md` | English version of this document |
 
 ## 3. Examples Library (94 in total)
 
@@ -174,14 +182,14 @@ English | [简体中文](./README.md)
 
 | Project | Description | README |
 |------|------|:---:|
-| `GPIO_EXTI/` | External interrupt example | ✅ |
-| `RGB/` | RGB LED (PC0/PC1/PC2) control | ✅ |
-| `RST_KEY/` | Reset key (PG10) test | ✅ |
-| `SPI_LCD_1.47inch/` | 1.47" SPI LCD | ✅ |
-| `SPI_LCD_2.0inch/` | 2.0" SPI LCD | ✅ |
-| `SPI_LCD_2.4inch/` | 2.4" SPI LCD | ✅ |
-| `SPI_FLASH/` | SPI Flash (W25Q) read/write | ✅ |
-| `FreeRTOS/` | FreeRTOS applications (9) | ✅ |
-| `USB_Device/` | USB Device applications (4: CDC/HID/DFU/MSC) | ✅ |
+| `SDK/GPIO_EXTI/` | External interrupt example | ✅ |
+| `SDK/RGB/` | RGB LED (PC0/PC1/PC2) control | ✅ |
+| `SDK/RST_KEY/` | Reset key (PG10) test | ✅ |
+| `SDK/SPI_LCD_1.47inch/` | 1.47" SPI LCD | ✅ |
+| `SDK/SPI_LCD_2.0inch/` | 2.0" SPI LCD | ✅ |
+| `SDK/SPI_LCD_2.4inch/` | 2.4" SPI LCD | ✅ |
+| `SDK/SPI_FLASH/` | SPI Flash (W25Q) read/write | ✅ |
+| `SDK/FreeRTOS/` | FreeRTOS applications (9) | ✅ |
+| `SDK/USB_Device/` | USB Device applications (4: CDC/HID/DFU/MSC) | ✅ |
 
 > Total projects: Examples **94** + standalone **7** + FreeRTOS **9** + USB_Device **4** = **114**

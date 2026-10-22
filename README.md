@@ -35,7 +35,7 @@
 - 长 4.55cm，宽 3.60cm
 - JLC 2 层板，沉金工艺，无铅 SMT
 
-## 一、板级引脚映射（PinMap.md）
+## 一、板级引脚映射（HDK/G4R_NANO-PinMap.md）
 
 | 功能 | 引脚 | 说明 |
 |------|------|------|
@@ -54,20 +54,28 @@
 
 | 路径 | 说明 |
 |------|------|
-| `Examples/` | 官方例程库（已适配 G4R_NANO，94 个工程） |
-| `FreeRTOS/` | 独立工程：FreeRTOS 应用（9 个，从 STM32G474E-EVAL 移植） |
-| `USB_Device/` | 独立工程：USB Device 应用（CDC/HID/DFU/MSC 共 4 个，从 STM32G474E-EVAL 移植） |
-| `GPIO_EXTI/` | 独立工程：外部中断示例 |
-| `RGB/` | 独立工程：RGB LED 控制 |
-| `RST_KEY/` | 独立工程：复位按键测试 |
-| `SPI_LCD_1.47inch/` | 独立工程：1.47 寸 LCD |
-| `SPI_LCD_2.0inch/` | 独立工程：2.0 寸 LCD |
-| `SPI_LCD_2.4inch/` | 独立工程：2.4 寸 LCD |
-| `SPI_FLASH/` | 独立工程：SPI Flash（W25Q） |
-| `PinMap.md` | 板级引脚定义 |
-| `keilclean.bat` | Keil 清理脚本 |
+| `HDK/` | 硬件开发套件（Hardware Development Kit） |
+| `HDK/G4R_NANO-Schematic.pdf` | 核心板原理图 |
+| `HDK/G4R_NANO-PinMap.md` | 板级引脚映射 |
+| `HDK/Altium-Designer-Libraries/G4R_NANO.PcbLib` | Altium Designer PCB 封装库 |
+| `HDK/Altium-Designer-Libraries/G4R_NANO.SchLib` | Altium Designer 原理图符号库 |
+| `HDK/Mechanical/` | 机械尺寸图 |
+| `SDK/Examples/` | 官方例程库（已适配 G4R_NANO，94 个工程） |
+| `SDK/FreeRTOS/` | 独立工程：FreeRTOS 应用（9 个，从 STM32G474E-EVAL 移植） |
+| `SDK/USB_Device/` | 独立工程：USB Device 应用（CDC/HID/DFU/MSC 共 4 个，从 STM32G474E-EVAL 移植） |
+| `SDK/GPIO_EXTI/` | 独立工程：外部中断示例 |
+| `SDK/RGB/` | 独立工程：RGB LED 控制 |
+| `SDK/RST_KEY/` | 独立工程：复位按键测试 |
+| `SDK/SPI_LCD_1.47inch/` | 独立工程：1.47 寸 LCD |
+| `SDK/SPI_LCD_2.0inch/` | 独立工程：2.0 寸 LCD |
+| `SDK/SPI_LCD_2.4inch/` | 独立工程：2.4 寸 LCD |
+| `SDK/SPI_FLASH/` | 独立工程：SPI Flash（W25Q） |
+| `SDK/keilclean.bat` | Keil 清理脚本 |
 | `STM32G474RET6.ioc` | CubeMX 工程（根配置） |
-| `README.md` | 本说明文档 |
+| `STM32_CubeMX_Keil_快速上手.md` | CubeMX/Keil 快速上手文档 |
+| `SDK.7z` | SDK 压缩包 |
+| `README.md` | 本说明文档（简体中文） |
+| `README_EN.md` | 英文说明文档 |
 
 ## 三、Examples 例程库（共 94 个）
 
@@ -174,14 +182,14 @@
 
 | 工程 | 说明 | README |
 |------|------|:---:|
-| `GPIO_EXTI/` | 外部中断示例 | ✅ |
-| `RGB/` | RGB LED（PC0/PC1/PC2）控制 | ✅ |
-| `RST_KEY/` | 复位按键（PG10）测试 | ✅ |
-| `SPI_LCD_1.47inch/` | 1.47 寸 SPI LCD | ✅ |
-| `SPI_LCD_2.0inch/` | 2.0 寸 SPI LCD | ✅ |
-| `SPI_LCD_2.4inch/` | 2.4 寸 SPI LCD | ✅ |
-| `SPI_FLASH/` | SPI Flash（W25Q）读写 | ✅ |
-| `FreeRTOS/` | FreeRTOS 应用（9 个） | ✅ |
-| `USB_Device/` | USB Device 应用（4 个：CDC/HID/DFU/MSC） | ✅ |
+| `SDK/GPIO_EXTI/` | 外部中断示例 | ✅ |
+| `SDK/RGB/` | RGB LED（PC0/PC1/PC2）控制 | ✅ |
+| `SDK/RST_KEY/` | 复位按键（PG10）测试 | ✅ |
+| `SDK/SPI_LCD_1.47inch/` | 1.47 寸 SPI LCD | ✅ |
+| `SDK/SPI_LCD_2.0inch/` | 2.0 寸 SPI LCD | ✅ |
+| `SDK/SPI_LCD_2.4inch/` | 2.4 寸 SPI LCD | ✅ |
+| `SDK/SPI_FLASH/` | SPI Flash（W25Q）读写 | ✅ |
+| `SDK/FreeRTOS/` | FreeRTOS 应用（9 个） | ✅ |
+| `SDK/USB_Device/` | USB Device 应用（4 个：CDC/HID/DFU/MSC） | ✅ |
 
 > 工程总数：Examples 例程库 **94** 个 + 独立工程 **7** 个 + FreeRTOS **9** 个 + USB_Device **4** 个 = **114** 个
