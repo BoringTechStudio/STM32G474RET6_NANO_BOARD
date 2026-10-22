@@ -1,5 +1,7 @@
 # STM32G474RET6 目录说明
 
+简体中文 | [English](./README_EN.md)
+
 > **开发板**：G4R_NANO（boring_tech_studio）
 > **主控**：STM32G474RET6（NUCLEO-64 兼容封装）
 
